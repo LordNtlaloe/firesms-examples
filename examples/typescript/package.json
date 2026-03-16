@@ -1,0 +1,20 @@
+{
+  "name": "firesms-typescript",
+  "version": "1.0.0",
+  "description": "Fire SMS example app using TypeScript",
+  "scripts": {
+    "start": "ts-node --esm src/send.ts",
+    "bulk": "ts-node --esm src/bulk.ts",
+    "build": "tsc",
+    "start:compiled": "node dist/send.js",
+    "bulk:compiled": "node dist/bulk.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

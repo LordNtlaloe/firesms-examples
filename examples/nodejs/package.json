@@ -1,0 +1,15 @@
+{
+  "name": "firesms-nodejs",
+  "version": "1.0.0",
+  "description": "Fire SMS example app using Node.js",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "send": "node send.js",
+    "balance": "node balance.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
