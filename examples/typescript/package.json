@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Fire SMS example app using TypeScript",
   "scripts": {
-    "start": "ts-node --esm src/send.ts",
-    "bulk": "ts-node --esm src/bulk.ts",
+    "start": "node --env-file=.env --loader ts-node/esm src/send.ts",
+    "bulk": "node --env-file=.env --loader ts-node/esm src/bulk.ts",
     "build": "tsc",
-    "start:compiled": "node dist/send.js",
-    "bulk:compiled": "node dist/bulk.js"
+    "start:compiled": "node --env-file=.env dist/send.js",
+    "bulk:compiled": "node --env-file=.env dist/bulk.js"
   },
   "devDependencies": {
     "typescript": "^5.4.0",

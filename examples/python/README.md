@@ -60,20 +60,13 @@ pip install -r requirements.txt
 
 ### 4. Set your API key
 
-**macOS / Linux:**
+Create a `.env` file in this directory:
+
 ```bash
-export FIRESMS_API_KEY=your_api_key_here
+FIRESMS_API_KEY=your_api_key_here
 ```
 
-**Windows (Command Prompt):**
-```cmd
-set FIRESMS_API_KEY=your_api_key_here
-```
-
-**Windows (PowerShell):**
-```powershell
-$env:FIRESMS_API_KEY="your_api_key_here"
-```
+> ⚠️ Never commit your `.env` file. It's listed in `.gitignore` by default.
 
 ---
 

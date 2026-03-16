@@ -2,6 +2,9 @@
 
 import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_URL = 'https://firesms.vercel.app/api/v1'
 

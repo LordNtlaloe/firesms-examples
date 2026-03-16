@@ -1,6 +1,6 @@
 # Fire SMS — PHP Example App
 
-A PHP application demonstrating how to send SMS messages using the [Fire SMS API](https://firesms.vercel.app). Uses a reusable `FireSMS` class with a custom exception for clean error handling. No Composer or external dependencies required.
+A PHP application demonstrating how to send SMS messages using the [Fire SMS API](https://firesms.vercel.app). Uses a reusable `FireSMS` class with a custom exception for clean error handling. Includes a minimal `.env` loader — no Composer or external dependencies required.
 
 ---
 
@@ -33,20 +33,13 @@ cd firesms-examples/examples/php
 
 ### 2. Set your API key
 
-**macOS / Linux:**
+Create a `.env` file in this directory:
+
 ```bash
-export FIRESMS_API_KEY=your_api_key_here
+FIRESMS_API_KEY=your_api_key_here
 ```
 
-**Windows (Command Prompt):**
-```cmd
-set FIRESMS_API_KEY=your_api_key_here
-```
-
-**Windows (PowerShell):**
-```powershell
-$env:FIRESMS_API_KEY="your_api_key_here"
-```
+> ⚠️ Never commit your `.env` file. It's listed in `.gitignore` by default.
 
 ---
 
@@ -180,9 +173,11 @@ try {
 
 ```
 php/
+├── dotenv.php      # Minimal .env loader (no Composer needed)
 ├── FireSMS.php     # Reusable Fire SMS client class
 ├── send.php        # Send a single SMS
 ├── bulk.php        # Send to multiple recipients
+├── .env.example    # Copy to .env and add your key
 └── README.md
 ```
 

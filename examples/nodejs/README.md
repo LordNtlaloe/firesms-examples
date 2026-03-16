@@ -28,27 +28,13 @@ cd firesms-examples/nodejs
 
 ### 2. Set your API key
 
-Fire SMS reads your key from the `FIRESMS_API_KEY` environment variable. Never hardcode it in your source files.
+Create a `.env` file in this directory:
 
-**macOS / Linux:**
 ```bash
-export FIRESMS_API_KEY=your_api_key_here
-```
-
-**Windows (Command Prompt):**
-```cmd
-set FIRESMS_API_KEY=your_api_key_here
-```
-
-**Windows (PowerShell):**
-```powershell
-$env:FIRESMS_API_KEY="your_api_key_here"
-```
-
-Or create a `.env` file (never commit this):
-```
 FIRESMS_API_KEY=your_api_key_here
 ```
+
+> ⚠️ Never commit your `.env` file. It's listed in `.gitignore` by default.
 
 ---
 
